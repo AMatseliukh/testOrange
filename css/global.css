@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: 'TT Hoves', sans-serif;
+  font-style: normal;
+  font-size: 400px;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 15px;
+}
+/*# sourceMappingURL=global.css.map */
