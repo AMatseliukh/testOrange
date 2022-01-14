@@ -78,7 +78,7 @@ header, footer, section{
 }
 
 section{
-  padding-bottom: 120px;
+  padding-bottom:  calc(30px + (120 - 30) * ((100vw - 320px) / (1200 - 320)));
   background-color: #fff;
 }
 
@@ -89,9 +89,9 @@ section{
 }
 
 .heading-2{
-  font-size: 64px;
+  font-size: calc(24px + (64 - 24) * ((100vw - 320px) / (1200 - 320)));
   font-weight: 300;
-  line-height: 64px;
+  line-height: calc(24px + (64 - 24) * ((100vw - 320px) / (1200 - 320)));
   color: $h2;
 }
 
@@ -100,8 +100,8 @@ section{
   align-items: center;
   justify-content: center;
   padding: 20px;
-  width: 222px;
-  height: 71px;
+  width: calc(200px + (220 - 200) * ((100vw - 320px) / (767-320)));
+  height: calc(50px + (71 - 50) * ((100vw - 320px) / (767-320)));
   span{
     font-size: 12px;
     font-style: normal;
@@ -122,23 +122,17 @@ section{
 .btn-light{
   background-color: #fff;
   color: $gray;
+  &:hover{
+    background-color: $gray;
+    color: #fff;
+  }
 }
 
-@media (max-width: 992px){
-  .heading-2{
-    font-size: 48px;
-    line-height: 48px;
-  }
-}
+
 @media (max-width: 767px) {
-  section{
-    padding-bottom: calc(30px + (120 - 30) * ((100vw - 320px) / (768 - 320)));
-  }
+  // section{
+  //   padding-bottom: calc(30px + (120 - 30) * ((100vw - 320px) / (768 - 320)));
+  // }
 }
-@media (max-width: 480px){
-  .heading-2{
-    font-size: 36px;
-    line-height: 36px;
-  }
-}
+
 

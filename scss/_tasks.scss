@@ -1,0 +1,99 @@
+// .tasks {
+// }
+
+// .tasks__inner {
+// }
+.tasks__title {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.tasks__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tasks__item-left, .tasks__item-right{
+  position: relative;
+}
+.tasks__item-left .tasks__item-content{
+  max-width: 413px;
+  padding-left: 134px;
+  &::before{
+    content: "1";
+  }
+}
+.tasks__item-right .tasks__item-content {
+  max-width: 570px;
+  padding-left: 170px;
+  &::before{
+    content: "2";
+  }
+}
+
+.tasks__item-content{
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $gray;
+  &::before{
+    color: #f2f2f2;
+    font-family: SF Pro Display;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+
+@media (max-width: 992px) {
+  .tasks__title {
+    margin-bottom: 45px;
+  }
+  .tasks__item-left .tasks__item-content{
+    padding-left: 100px;
+    max-width: 320px;
+  }
+  .tasks__item-right .tasks__item-content{
+    max-width: 440px;
+    padding-left: 130px;
+  }
+
+  .tasks__item-content{
+    font-size: 18px;
+    &::before{
+      font-size: 150px;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .tasks__items{
+    flex-direction: column;
+  }
+  .tasks__item-left{
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px){
+  .tasks__item-left .tasks__item-content{
+    max-width: 100%;
+    padding-left: 80px;
+  }
+  .tasks__item-right .tasks__item-content{
+    max-width: 100%;
+    padding-left: 80px;
+    padding-right: 15px;
+  }
+  .tasks__item-content{
+    font-size: 16px;
+    &::before{
+      font-size: 100px;
+    }
+  }
+}

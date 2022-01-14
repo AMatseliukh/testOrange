@@ -19,9 +19,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: calc(72px + (102 - 0) * ((100vw - 768px) / (1440-768)));
+  min-height: calc(72px + (102 - 0) * ((100vw - 768px) / (1200-768)));
 }
-.header__logo {
+.header__logo{
+  width: calc(300px + (380 - 300) * ((100vw - 768px) / (1200 - 768)));
+}
+.header__logo-img {
   width: 70px;
   height: 44px;
   img{
@@ -33,6 +36,7 @@
 // }
 .header__menu-list{
   display: flex;
+  justify-content: space-between;
   li{ 
     position: relative;
     margin-right: 60px;
@@ -42,6 +46,9 @@
     &:hover{
       border-top: 1px solid $gray;
       border-bottom: 1px solid $gray;
+    }
+    &:last-child{
+      margin-right: 30px;
     }
   }
 }
