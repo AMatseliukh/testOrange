@@ -53,6 +53,7 @@ button {
 
 a {
   text-decoration: none;
+  display: inline-block;
   &:hover{
     cursor: pointer;
   }
@@ -100,11 +101,11 @@ section{
   align-items: center;
   justify-content: center;
   padding: 20px;
-  width: calc(200px + (220 - 200) * ((100vw - 320px) / (767-320)));
-  height: calc(50px + (71 - 50) * ((100vw - 320px) / (767-320)));
+  width: 220px;
+  height: 70px;
   span{
     font-size: 12px;
-    font-style: normal;
+    line-height: 12px;
     font-weight: 400;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -123,16 +124,25 @@ section{
   background-color: #fff;
   color: $gray;
   &:hover{
-    background-color: $gray;
+    background-color: rgba(51, 51, 51, 0.5);
     color: #fff;
+  }
+}
+.btn-dark{
+  background-color: $gray;
+  color: #fff;
+  &:hover{
+    background-color: rgba(51, 51, 51, 0.5);
+    color: $gray;
   }
 }
 
 
 @media (max-width: 767px) {
-  // section{
-  //   padding-bottom: calc(30px + (120 - 30) * ((100vw - 320px) / (768 - 320)));
-  // }
+  btn{
+    width: calc(200px + (220 - 200) * ((100vw - 320px) / (767-320)));
+    height: calc(50px + (70 - 50) * ((100vw - 320px) / (767-320)));
+  }
 }
 
 

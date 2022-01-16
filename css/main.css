@@ -71,6 +71,7 @@ button {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 a:hover {
@@ -127,13 +128,13 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px;
-  width: calc(200px + (220 - 200) * ((100vw - 320px) / (767-320)));
-  height: calc(50px + (71 - 50) * ((100vw - 320px) / (767-320)));
+  width: 220px;
+  height: 70px;
 }
 
 .btn span {
   font-size: 12px;
-  font-style: normal;
+  line-height: 12px;
   font-weight: 400;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -157,8 +158,25 @@ section {
 }
 
 .btn-light:hover {
+  background-color: rgba(51, 51, 51, 0.5);
+  color: #fff;
+}
+
+.btn-dark {
   background-color: #333333;
   color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: rgba(51, 51, 51, 0.5);
+  color: #333333;
+}
+
+@media (max-width: 767px) {
+  btn {
+    width: calc(200px + (220 - 200) * ((100vw - 320px) / (767-320)));
+    height: calc(50px + (70 - 50) * ((100vw - 320px) / (767-320)));
+  }
 }
 
 .header {
@@ -749,6 +767,155 @@ body._touch .header__menu-link {
   }
   .tasks__item-content::before {
     font-size: 100px;
+  }
+}
+
+.projects__title {
+  margin-bottom: 22px;
+}
+
+.projects__gallery {
+  margin-bottom: 30px;
+}
+
+.projects-gallery__row1,
+.projects-gallery__row2 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-gallery__row1 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 255px;
+      grid-template-rows: 255px;
+}
+
+.projects-gallery__item1 {
+  max-width: 570px;
+  cursor: pointer;
+  position: relative;
+  height: 255px;
+  padding: calc(20px + (48 - 20) * ((100vw - 320px) / (1200 - 320)));
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(51, 51, 51, 0.5);
+  z-index: 3;
+}
+
+.projects-gallery__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 9;
+  height: 100%;
+  max-width: 350px;
+}
+
+.projects-gallery__title {
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 12;
+}
+
+.projects-gallery__btn {
+  color: #fff;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin-top: 8px;
+  z-index: 12;
+}
+
+.projects-gallery__btn span {
+  margin-left: 0;
+}
+
+.projects-gallery__row2 {
+  -ms-grid-columns: minmax(230px, 270px) minmax(380px, 470px) minmax(292px, 370px);
+      grid-template-columns: minmax(230px, 270px) minmax(380px, 470px) minmax(292px, 370px);
+  -ms-grid-rows: 255px;
+      grid-template-rows: 255px;
+}
+
+.projects-gallery__row3 {
+  display: none;
+}
+
+.projects__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+@media (max-width: 992px) {
+  .projects-gallery__row1,
+  .projects-gallery__row2,
+  .projects-gallery__row3 {
+    -ms-grid-rows: 255px;
+        grid-template-rows: 255px;
+  }
+  .projects-gallery__row2 {
+    -ms-grid-columns: minmax(230px, 270px) minmax(380px, 470px);
+        grid-template-columns: minmax(230px, 270px) minmax(380px, 470px);
+  }
+  .hidden {
+    display: none;
+  }
+  .projects-gallery__row3 {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 370px;
+        grid-template-columns: 370px;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects-gallery__row1 {
+    -ms-grid-columns: minmax(290px, 570px);
+        grid-template-columns: minmax(290px, 570px);
+    -ms-grid-rows: 255px 255px;
+        grid-template-rows: 255px 255px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects-gallery__row2 {
+    -ms-grid-columns: minmax(270px, 470px);
+        grid-template-columns: minmax(270px, 470px);
+    -ms-grid-rows: 220px 220px 220px;
+        grid-template-rows: 220px 220px 220px;
+  }
+  .hidden {
+    display: block;
+  }
+  .projects-gallery__row3 {
+    display: none;
   }
 }
 
