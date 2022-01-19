@@ -64,8 +64,7 @@
   flex-direction: column;
 }
 .footer-contacts__items {
-  display: flex;
-  justify-content: space-between;
+  display: block;
 }
 .footer-contacts__item{
   font-size: 14px;

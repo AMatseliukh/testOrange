@@ -103,6 +103,8 @@ section{
   padding: 20px;
   width: 220px;
   height: 70px;
+  border: none;
+  outline: none;
   span{
     font-size: 12px;
     line-height: 12px;
@@ -136,7 +138,9 @@ section{
     color: $gray;
   }
 }
-
+.red{
+  color: red;
+}
 
 @media (max-width: 767px) {
   btn{

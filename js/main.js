@@ -165,6 +165,24 @@ const mainSwiper = new Swiper(mainSlider, {
 //   mobileSlider();
 // });
 
+// -----------------------------------------
+
+let area = document.querySelector('.form__textarea');
+let areaPlaceholder = area.getAttribute("placeholder");
+let newAreaPlaceholder = areaPlaceholder.split('').splice(-1, 1)[0];
+
+area.hasAttribute('placeholder');
+
+// areaPlaceholder = areaPlaceholder.spliе(', ');
+
+console.log(area);
+console.log(area.hasAttribute('placeholder'));
+console.log(area.getAttribute('placeholder'));
+console.log(areaPlaceholder.split('').splice(-1, 1));
+console.log(newAreaPlaceholder);
+
+console.log(areaPlaceholder);
+
 // ------------------------------------------
 
 const footerArrow = document.querySelector('.footer__arrow');
