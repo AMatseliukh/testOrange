@@ -1,13 +1,7 @@
-// .tasks {
-// }
-
-// .tasks__inner {
-// }
 .tasks__title {
   text-align: left;
   margin-bottom: 60px;
 }
-
 .tasks__items {
   display: flex;
   justify-content: space-between;
@@ -30,7 +24,6 @@
     content: "2";
   }
 }
-
 .tasks__item-content{
   font-size: 22px;
   font-weight: 400;
@@ -49,7 +42,6 @@
   }
 }
 
-
 @media (max-width: 992px) {
   .tasks__title {
     margin-bottom: 45px;
@@ -62,7 +54,6 @@
     max-width: 440px;
     padding-left: 130px;
   }
-
   .tasks__item-content{
     font-size: 18px;
     &::before{

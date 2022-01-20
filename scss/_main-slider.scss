@@ -1,20 +1,12 @@
 .main-slider {
   margin-top: calc(72px + (102 - 72) * ((100vw - 768px) / (1440-768)));
 }
-
-// .container {
-// }
 .main-slider__body{
   position: relative;
 }
 .main-slider__wrapper {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
   position: relative;
 }
-// .swiper {
-// }
 .main-slider__slide{
   display: flex;
   justify-content: space-between;
@@ -43,13 +35,6 @@
     text-transform: uppercase;
   }
 }
-// .main-slider__slider {
-//   position: relative;
-// }
-// .swiper-wrapper {
-// }
-// .swiper-slide {
-// }
 .main-slider__slide-img{
   position: relative;
   width: 100%;
@@ -67,9 +52,6 @@
   bottom: 0;
   left: 0;
 }
-
-// .btn {
-// }
 .main-slider__controls{
   position: absolute;
   display: flex;
@@ -79,10 +61,7 @@
   height: calc(100px + (174 - 100) * ((100vw - 768px) / (1440-768)));
   left: 0;
   bottom: calc(0px + (104 - 0) * ((100vw - 768px) / (1440-768)));
-  // @include adaptiv-value("bottom", 104, 0, 0);
 }
-// .swiper-pagination {
-// }
 .swiper-button-next{
   right: 21px;
 }
@@ -111,16 +90,10 @@
   line-height: 1;
   color: $h2;
 }
-// .swiper-pagination {
-// }
-// .controls-main__pagination-current {
-// }
 .swiper-pagination-current::before,
 .swiper-pagination-total::before {
   content: "0";
 }
-// .controls-main__pagination-total {
-// }
 
 @media (max-width: 767px) {
   .main-slider__slide{

@@ -212,13 +212,13 @@
             <input type="text" class="form__input" name="name" placeholder="Интересующий товар/услуга">
             <textarea class="form__textarea" name=""id="" cols="30" rows="7" placeholder="Сообщение*"
             required></textarea>
+            <!-- <span class="red">*</span> -->
             <div class="form-contact__group">
-              <input class="form-contact__checkbox" type="checkbox" id="linkDa">
-              <span class="custom-checkbox _icon-check"></span>
-              <label for="linkDa">Отправляя заявку Вы соглашаетесь c <br>
-                <!-- <span id="link"> -->
+              <label for="linkDa">
+                <input class="form-contact__checkbox" type="checkbox" id="linkDa">
+                <span class="custom-checkbox _icon-check"></span>
+                Отправляя заявку Вы соглашаетесь c <br>
                 <a class="form-contact__checkbox-link" href="#">политикой конфиденциальности</a>
-                <!-- </span> -->
               </label>
             </div>
             <button class="form-contact__btn btn btn-dark" type="submit">
