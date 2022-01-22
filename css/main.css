@@ -807,8 +807,6 @@ body._touch .header__menu-link {
 
 .projects-gallery__item1 {
   max-width: 570px;
-  cursor: pointer;
-  position: relative;
   height: 255px;
   padding: calc(20px + (48 - 20) * ((100vw - 320px) / (1200 - 320)));
 }
@@ -878,6 +876,14 @@ body._touch .header__menu-link {
   margin-left: auto;
 }
 
+.projects-gallery__item1,
+.projects-gallery__item3,
+.projects-gallery__item4,
+.projects-gallery__item5 {
+  position: relative;
+  cursor: pointer;
+}
+
 .projects-gallery__item1:hover .overlay,
 .projects-gallery__item3:hover .overlay,
 .projects-gallery__item4:hover .overlay,
@@ -886,6 +892,26 @@ body._touch .header__menu-link {
 }
 
 .projects-gallery__item1:hover .projects-gallery__content,
+.projects-gallery__item3:hover .projects-gallery__content,
+.projects-gallery__item4:hover .projects-gallery__content,
+.projects-gallery__item5:hover .projects-gallery__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects-gallery__item3,
+.projects-gallery__item4,
+.projects-gallery__item5 {
+  position: relative;
+}
+
+.projects-gallery__item3:hover .overlay,
+.projects-gallery__item4:hover .overlay,
+.projects-gallery__item5:hover .overlay {
+  display: block;
+}
+
 .projects-gallery__item3:hover .projects-gallery__content,
 .projects-gallery__item4:hover .projects-gallery__content,
 .projects-gallery__item5:hover .projects-gallery__content {
